@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AuthNumberScreen</string>
+    <string name="authorization_title">Авторизация</string>
+    <string name="continue_title">Продолжить</string>
+    <string name="input_phone_number_title">Введите номер телефона</string>
+    <string name="accept_privacy_policy_and_public_offer_title"> Нажимая “Продолжить”, я соглашаюсь с <a href="https://somesite.com">Публичной офертой</a> и <a href="https://somesite2.com">Соглашением о конфиденциальности</a></string>
+</resources>

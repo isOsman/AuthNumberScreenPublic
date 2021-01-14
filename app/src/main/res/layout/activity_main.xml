@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_main_auth_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/size_20x"
+                android:layout_marginTop="@dimen/size_20x"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="@string/authorization_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_28x" />
+
+            <ImageView
+                android:id="@+id/activity_main_close_image_view"
+                android:layout_width="@dimen/size_40x"
+                android:layout_height="@dimen/size_40x"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_15x"
+                android:background="@drawable/bg_circle_gray"
+                android:scaleType="center"
+                android:src="@drawable/ic_close" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_62x"
+            android:orientation="vertical"
+            android:padding="@dimen/size_20x">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_4x"
+                android:fontFamily="@font/gilroy_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_12x"
+                android:text="@string/input_phone_number_title" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/activity_main_phone_text_input_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:theme="@style/phone_input_layout_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/app_primary_gray"
+                app:boxStrokeColor="@color/black"
+                app:endIconMode="clear_text"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@null"
+                app:errorTextAppearance="@style/phone_error_text_style">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phone_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_regular"
+                    android:inputType="phone"
+                    android:textSize="@dimen/text_size_15x"
+                    android:text="+7" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical|bottom">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/size_20x"
+            android:layout_marginBottom="@dimen/margin_15x"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/gilroy_regular"
+            android:textAlignment="center"
+            android:textColorLink="@color/black"
+            android:text="@string/accept_privacy_policy_and_public_offer_title"
+            android:textSize="@dimen/text_size_13x" />
+
+        <Button
+            android:id="@+id/activity_main_continue_button"
+            style="@style/basic_button_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/size_20x"
+            android:layout_marginBottom="@dimen/margin_16x"
+            android:background="@drawable/bg_rounded_button"
+            android:textColor="@drawable/button_text_color_selector"
+            android:fontFamily="@font/gilroy_bold"
+            android:textSize="@dimen/text_size_16x"
+            android:textAllCaps="false"
+            android:text="@string/continue_title"
+            android:enabled="false"/>
+    </LinearLayout>
+</FrameLayout>
